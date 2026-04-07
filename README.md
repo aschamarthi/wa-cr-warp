@@ -59,11 +59,12 @@ Each snapshot is saved as a compressed `.npz` file containing:
 time, x, y, z, rho, p, u, v, w
 ```
 
+Chang to Tecplot or VTK files if necessary. 
+
 ## Visualization
 
-```bash
-# Can use python scripts for plotting but the code does periodically. Can disable it if not required.
-```
+  Can use Python scripts for plotting, but the code does periodically plot the output. Can disable it if not required.
+
 
 ## Performance (A100 80GB)
 
@@ -73,7 +74,7 @@ time, x, y, z, rho, p, u, v, w
 | 512³ | ~62 GB | ~1.2 s | ~28,000 | ~9 hr |
 
 
-The other two codes in the repository siualtes the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. Takes 11s on A100 using the WA-WENO-CR approach.
+The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. It takes 11s on an A100 using the WA-WENO-CR approach.
 
 ## References
 
