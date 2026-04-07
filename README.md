@@ -80,7 +80,7 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
 2. Hoffmann, Chamarthi, Frankel — *Centralized gradient-based reconstruction for wall-modelled LES of hypersonic boundary layer transition*, **J. Comput. Phys.** (2024)
-3. Chamarthi et al. — *Wave-appropriate multidimensional upwinding approach for compressible multiphase flows*, **J. Comput. Phys.** 538, 114157 (2025)
+3. Chamarthi — *Wave-appropriate multidimensional upwinding approach for compressible multiphase flows*, **J. Comput. Phys.** 538, 114157 (2025)
 4. Chamarthi — *Physics-appropriate interface capturing reconstruction approach for viscous compressible multicomponent flows*, **Comput. Fluids** 303, 106858 (2025)
 5. Chamarthi — *Centralized gradient-based reconstruction: minimum acoustic upwind bias and rank-1 entropy correction*, preprint (2026)
 
