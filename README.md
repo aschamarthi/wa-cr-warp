@@ -59,7 +59,7 @@ Each snapshot is saved as a compressed `.npz` file containing:
 time, x, y, z, rho, p, u, v, w
 ```
 
-Chang to Tecplot or VTK files if necessary. 
+Change to Tecplot or VTK files if necessary. 
 
 ## Visualization
 
