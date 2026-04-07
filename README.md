@@ -20,7 +20,7 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 
 | Region | Acoustic waves | Entropy wave | Vortical waves |
 |--------|---------------|--------------|----------------|
-| Smooth | Central-6 (`sai=0.6`) | MP5 | Central-6 (`kai=0.5`) |
+| Smooth | Central-6 (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
 | Shocked | WENO-Z | WENO-Z | WENO-Z |
 
 The wave-appropriate framework decomposes the flow into its five characteristic families and applies the minimum necessary dissipation to each:
