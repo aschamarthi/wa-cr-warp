@@ -81,7 +81,7 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 ![2D Riemann Problem — WA-3 scheme]
 <p align="center">
-  <img src="Riemann_W3.png" width="500"/>
+  <img src="Riemann_W3.png" width="400"/>
 </p>
 
 
