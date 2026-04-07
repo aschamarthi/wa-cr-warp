@@ -79,7 +79,10 @@ Change to Tecplot or VTK files if necessary.
 
 The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes.
 
-![2D Riemann Problem — WA-3 scheme](<img src="Riemann_W3.png" width="500"/>)
+![2D Riemann Problem — WA-3 scheme]
+<p align="center">
+  <img src="Riemann_W3.png" width="500"/>
+</p>
 
 
 *Density contours for the 2D Riemann problem  using the WA-3 scheme, 512² grid, t=1.1. Wall time: 11s on A100 (WA-WENO-CR).*
