@@ -76,6 +76,8 @@ Change to Tecplot or VTK files if necessary.
 
 The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. It takes 11s on an A100 using the WA-WENO-CR approach.
 
+I will add the multicomponent and multiphase codes at a later date.
+
 ## References
 
 1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
