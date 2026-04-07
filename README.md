@@ -83,10 +83,10 @@ It was fun.
 ## References
 
 1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
-2. Hoffmann, Chamarthi, Frankel — *Centralized gradient-based reconstruction for wall-modelled LES of hypersonic boundary layer transition*, **J. Comput. Phys.** (2024)
+2. Hoffmann, Chamarthi, Frankel — *Centralized gradient-based reconstruction for wall modeledlarge eddy simulations of hypersonic boundary layer transition*, **J. Comput. Phys.** (2024)
 3. Chamarthi — *Wave-appropriate multidimensional upwinding approach for compressible multiphase flows*, **J. Comput. Phys.** 538, 114157 (2025)
-4. Chamarthi — *Physics-appropriate interface capturing reconstruction approach for viscous compressible multicomponent flows*, **Comput. Fluids** 303, 106858 (2025)
-5. Chamarthi — *Centralized gradient-based reconstruction: minimum acoustic upwind bias and rank-1 entropy correction*, preprint (2026)
+4. Chamarthi — *Physics appropriate interface capturing reconstruction approach for viscous compressible multicomponent flows*, **Comput. Fluids** 303, 106858 (2025)
+5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
 
 ## Author
 
