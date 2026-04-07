@@ -74,7 +74,17 @@ Change to Tecplot or VTK files if necessary.
 | 512³ | ~62 GB | ~1.2 s | ~28,000 | ~9 hr |
 
 
-The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. It takes 11s on an A100 using the WA-WENO-CR approach.
+
+## 2D Riemann Problem (Configuration 3)
+
+The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes.
+
+![2D Riemann Problem — WA-3 scheme](Riemann_W3.png)
+*Density contours for the 2D Riemann problem  using the WA-3 scheme, 512² grid, t=1.1. Wall time: 11s on A100 (WA-WENO-CR).*
+
+Two solvers are included:
+- `MUSCL_WA.py` — WA-3 scheme
+- `WENO_PNG_Cheap.py` — WA-WENO-CR scheme (11s on A100 at 512²)
 
 I will add the multicomponent and multiphase codes at a later date.
 
