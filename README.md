@@ -10,23 +10,23 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 ## Key Features
 
 - **Wave-appropriate reconstruction** — each characteristic wave family (acoustic, entropy, vortical) is treated with its physically appropriate scheme
-- **SoA memory layout** `cons[var, ix, iy, iz]` for coalesced GPU memory access
-- **GPU atomic-min CFL** — only 8 bytes transferred CPU↔GPU per time step
-- **Inlined HLLC Riemann solver** — no custom vector types required
+- **SoA memory layout** `cons[var, ix, iy, iz]` for coalesced GPU memory access. Needed some modifications.
 - **SSP-RK3** time integration
-- **3D Ducros sensor** for shock detection
+- **Ducros sensor** for shock detection and for the contact discontinuity rank-1 correction is used. 
 
 ## Numerical Scheme
 
 | Region | Acoustic waves | Entropy wave | Vortical waves |
 |--------|---------------|--------------|----------------|
-| Smooth | Central-6 (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
+| Smooth | Upwind (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
 | Shocked | WENO-Z | WENO-Z | WENO-Z |
+
+In regions of shockwaves one can also do Wave appropriate centralization. Is not included in the current python code.
 
 The wave-appropriate framework decomposes the flow into its five characteristic families and applies the minimum necessary dissipation to each:
 
 - **Acoustic waves** — upwind-biased (η = 0.6) for stability near shocks
-- **Entropy wave** — MP5 in smooth regions, WENO-Z near shocks; rank-1 correction from WA-CR
+- **Entropy wave** — MP5 in smooth regions, WENO-Z (or MP5 or MUSCL) near shocks; rank-1 correction from WA-CR
 - **Vortical waves** — central (η = 0.5) to preserve turbulent structures
 
 ## Installation
@@ -62,14 +62,7 @@ time, x, y, z, rho, p, u, v, w
 ## Visualization
 
 ```bash
-# Q-criterion isosurface (interactive)
-python viz3d.py tgv_003539.npz
-
-# Save publication-quality PNG
-python viz3d.py tgv_003539.npz --save --dpi 600 --bg black
-
-# Make video from all snapshots
-python make_video.py --fps 24 --dpi 200 --bg black
+# Can use python scripts for plotting but the code does periodically. Can disable it if not required.
 ```
 
 ## Performance (A100 80GB)
@@ -77,9 +70,10 @@ python make_video.py --fps 24 --dpi 200 --bg black
 | Grid | Memory | Time/step | Steps (t=10) | Wall time |
 |------|--------|-----------|--------------|-----------|
 | 64³  | ~0.5 GB | ~5 ms | ~1,500 | ~2 min |
-| 128³ | ~3 GB  | ~30 ms | ~5,000 | ~2.5 hr |
-| 256³ | ~20 GB | ~200 ms | ~12,000 | ~40 min |
-| 512³ | ~55 GB | ~1.2 s | ~28,000 | ~9 hr |
+| 512³ | ~62 GB | ~1.2 s | ~28,000 | ~9 hr |
+
+
+The other two codes in the repository siualtes the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. Takes 11s on A100 using the WA-WENO-CR approach.
 
 ## References
 
