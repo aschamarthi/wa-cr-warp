@@ -39,16 +39,16 @@ pip install warp-lang numpy matplotlib
 
 ```bash
 # Inviscid Taylor-Green Vortex, 64³
-python 3D_TGV_WA.py.py
+python 3D_TGV_WA.py
 
 # 128³
-python 3D_TGV_WA.py.py --n 128
+python 3D_TGV_WA.py --n 128
 
-# 512³ (A100 recommended)
-python 3D_TGV_WA.py.py --n 512
+# 512³ (A100 or better)
+python 3D_TGV_WA.py --n 512
 
 # CPU mode
-python 3D_TGV_WA.py.py --n 64 --cpu
+python 3D_TGV_WA.py --n 64 --cpu
 ```
 
 ## Output
