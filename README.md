@@ -78,6 +78,8 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 I will add the multicomponent and multiphase codes at a later date.
 
+It was fun. 
+
 ## References
 
 1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
