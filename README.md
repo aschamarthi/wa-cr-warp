@@ -31,7 +31,7 @@ The wave-appropriate framework decomposes the flow into its five characteristic 
 - **Entropy wave** — MP5 in smooth regions, WENO-Z (or MP5 or MUSCL) near shocks; rank-1 correction from WA-CR
 - **Vortical waves** — central (η = 0.5) to preserve turbulent structures
 
-- For more details see Ref. 2 and 3.
+- For more details see please see the References, mainly 2 and 3.
 
 ## Installation
 
@@ -67,7 +67,7 @@ Change to Tecplot or VTK files if necessary.
 
 ## Visualization
 
-  Can use Python scripts for plotting, but the code does periodically plot the output. Can disable it if not required.
+  Can use Python scripts for plotting, but the code does periodically plot the output. Can disable it if not required. Pyvista or Paraview.
 
 
 ## Performance (A100 80GB)
