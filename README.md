@@ -73,7 +73,7 @@ Change to Tecplot or VTK files if necessary.
 | Grid | Memory | Time/step | Steps (t=10) | Wall time |
 |------|--------|-----------|--------------|-----------|
 | 64³  | ~0.5 GB | ~5 ms | ~1,500 | ~2 min |
-| 512³ | ~62 GB | ~1.2 s | ~28,000 | ~9 hr |
+| 512³ | ~49 GB | ~1.2 s | ~28,000 | ~9 hr |
 
 
 
