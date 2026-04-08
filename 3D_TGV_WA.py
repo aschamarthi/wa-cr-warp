@@ -16,12 +16,12 @@ Algorithm is from ref. 5.
 
 **Amareshwara Sainadh Chamarthi** sainath@caltech.edu
 
-GPU optimisations vs v1:
+GPU optimization vs version 1.0:
   - SoA memory layout: cons[var, ix, iy, iz]  (coalesced reads)
   - Atomic-min dt reduction: only 8 bytes CPU<->GPU per step
-  - Inlined HLLC: no custom vector return type
+  - Inlined HLLC: no custom vector return type (Vec4D array in 2D was unhelpful )
 
-Domain  : [0,2pi]^3   t_end=10   gamma=5/3   periodic BCs
+Domain  : [0,2pi]^3   t_end=10   \gamma=5/3   periodic BCs
 IC      : Taylor-Green Vortex
 
 Usage
@@ -58,7 +58,7 @@ GZ = NZ + 2*GHOSTP + 1
 G  = GHOSTP
 
 NTMAX     = 200_000
-FILE_SAVE = 200
+FILE_SAVE = 200  ## Would be too much on 512^3, use appropriately
 CFL_PY    = 0.4
 T_END     = 10.0
 
