@@ -29,6 +29,8 @@ The wave-appropriate framework decomposes the flow into its five characteristic 
 - **Entropy wave** — MP5 in smooth regions, WENO-Z (or MP5 or MUSCL) near shocks; rank-1 correction from WA-CR
 - **Vortical waves** — central (η = 0.5) to preserve turbulent structures
 
+- For more details see Ref. 2 and 3.
+
 ## Installation
 
 ```bash
@@ -77,7 +79,7 @@ Change to Tecplot or VTK files if necessary.
 
 ## 2D Riemann Problem (Configuration 3)
 
-The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. Both of them work with NVIDIA Warp
+The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR. Both of them work with NVIDIA Warp
 
 ![2D Riemann Problem — WA-3 scheme]
 <p align="center">
@@ -85,11 +87,11 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 </p>
 
 
-*Density contours for the 2D Riemann problem  using the WA-3 scheme, 512² grid, t=1.1. Wall time: 11s on A100 (WA-WENO-CR).*
+*Density contours for the 2D Riemann problem  using the WA-3 approach, 512² grid, t=1.1. Wall time: 11s on A100 (WA-WENO-CR).*
 
 Two solvers are included:
-- `MUSCL_WA.py` — WA-3 scheme
-- `WENO_PNG_Cheap.py` — WA-WENO-CR scheme (11s on A100 at 512²)
+- `MUSCL_WA.py` — WA-3 approach
+- `WENO_PNG_Cheap.py` — WA-WENO-CR approach (11s on A100 at 512²)
 
 I will add the multicomponent and multiphase codes at a later date, and may even flow with geometries (curvilinear or immersed boundary).
 
