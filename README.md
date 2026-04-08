@@ -95,11 +95,11 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 Two solvers are included:
 - `MUSCL_WA.py` — WA-3 approach
-- `WENO_PNG_Cheap.py` — WA-WENO-CR approach (11s on A100 at 512²)
+- `WENO_PNG_Cheap.py` — WA-WENO-CR approach (11s on A100 at 512², an hour and few minutes for 2048²)
 
 I will add the multicomponent and multiphase codes at a later date, and may even add geometries (curvilinear or immersed boundary).
 
-It was fun. Faster than nvFORTRAN for reasons I don't know. For example, the Riemann problem took about 24s with FORTRAN code.
+It was fun. Faster than nvFORTRAN for reasons I don't know. For example, the Riemann problem took about 24s with FORTRAN code. I like the CUDA code I get :)
 
 ## References
 
