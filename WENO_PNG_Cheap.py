@@ -11,7 +11,7 @@ Warp GPU solver  |  Wave appropriate reconstruction
 5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
 
 
-Algorithm is from ref. 5. WA-3
+Algorithm is from ref. 5. WA-WENO-CR.... or WA-5. Free to change the reconstructions. Its modular framework. Copy and paste.
 ## Author
 
 **Amareshwara Sainadh Chamarthi** sainath@caltech.edu
