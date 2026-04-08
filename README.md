@@ -91,9 +91,9 @@ Two solvers are included:
 - `MUSCL_WA.py` — WA-3 scheme
 - `WENO_PNG_Cheap.py` — WA-WENO-CR scheme (11s on A100 at 512²)
 
-I will add the multicomponent and multiphase codes at a later date.
+I will add the multicomponent and multiphase codes at a later date, and may even flow with geometries (curvilinear or immersed boundary).
 
-It was fun. 
+It was fun. Faster than nvFORTRAN for reasons I don't know. For example, the Riemann problem took about 24s with FORTRAN code.
 
 ## References
 
