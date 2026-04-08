@@ -11,7 +11,7 @@ Warp GPU solver  |  WENO-Z / HLLC / SSP-RK3
 5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
 
 
-Algorith is from ref. 5.
+Algorithm is from ref. 5.
 ## Author
 
 **Amareshwara Sainadh Chamarthi** sainath@caltech.edu
