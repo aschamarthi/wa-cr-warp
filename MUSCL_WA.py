@@ -1,6 +1,6 @@
 """
 2D Compressible Euler Solver — Explosion test case
-Using Nvidia Warp 
+Warp GPU solver  |  Wave appropriate reconstruction
 
 ## References
 
