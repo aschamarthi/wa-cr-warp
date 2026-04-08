@@ -11,7 +11,7 @@ Warp GPU solver  |  Wave appropriate reconstruction
 5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
 
 
-Algorithm is from ref. 5.
+Algorithm is from ref. 5. I made few modifications here and there out of necessity and laziness  compared to the paper.
 ## Author
 
 **Amareshwara Sainadh Chamarthi** sainath@caltech.edu
@@ -642,7 +642,7 @@ def wcns_y_kernel(
     c2=wp.max((GAMMA-F1)*(H_r-HALF*q2v),TINY); c_r=wp.sqrt(c2)
     NXV=F0; NYV=F1; NZV=F0; LX=F0; LY=F0; LZ=F1; MX=F1; MY=F0; MZ=F0
     qn=v_r; ql=w_r; qm=u_r
-
+      # Its ok to consider "HALF" for this particulr test case (or for that matter anything with periodic Bcs) but should use 0.60 or something near the boundaries.
     if is_smooth:
         sai=F0p6
         ul0=central6_ul(cons[0,ix,face_iy-2,iz],cons[0,ix,face_iy-1,iz],cons[0,ix,face_iy,iz],cons[0,ix,face_iy+1,iz],cons[0,ix,face_iy+2,iz],cons[0,ix,face_iy+3,iz],HALF)
