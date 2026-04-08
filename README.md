@@ -19,13 +19,13 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 | Region | Acoustic waves | Entropy wave | Vortical waves |
 |--------|---------------|--------------|----------------|
 | Smooth | Upwind (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
-| Shocked | WENO-Z | WENO-Z | WENO-Z |
+| Shock | WENO-Z | WENO-Z | WENO-Z |
 
-In regions of shockwaves one can also do Wave appropriate centralization. Is not included in the current python code.
+In regions of shock waves one can also do Wave appropriate centralization. Is not included in the current python code.
 
 The wave-appropriate framework decomposes the flow into its five characteristic families and applies the minimum necessary dissipation to each:
 
-- **Acoustic waves** — upwind-biased (η = 0.6) for stability near shocks
+- **Acoustic waves** — upwind-biased (η = 0.6) for stability near shocks and in **general**. See double shear layer case, please.
 - **Entropy wave** — MP5 in smooth regions, WENO-Z (or MP5 or MUSCL) near shocks; rank-1 correction from WA-CR
 - **Vortical waves** — central (η = 0.5) to preserve turbulent structures
 
@@ -77,7 +77,7 @@ Change to Tecplot or VTK files if necessary.
 
 ## 2D Riemann Problem (Configuration 3)
 
-The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes.
+The other two codes in the repository simulate the 2D Riemann problem by using WA-3 or WA-WENO-CR schemes. Both of them work with NVIDIA Warp
 
 ![2D Riemann Problem — WA-3 scheme]
 <p align="center">
