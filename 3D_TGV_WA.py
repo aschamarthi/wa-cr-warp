@@ -1,6 +1,6 @@
 """
 3D Compressible Euler — Taylor-Green Vortex
-Warp GPU solver  |  WENO-Z / HLLC / SSP-RK3
+Warp GPU solver  |  Wave appropriate reconstruction
 
 ## References
 
