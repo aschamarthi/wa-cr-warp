@@ -19,7 +19,7 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 | Region | Acoustic waves | Entropy wave | Vortical waves |
 |--------|---------------|--------------|----------------|
 | Smooth | Upwind (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
-| Shock | WENO-Z | WENO-Z | WENO-Z |
+| Shock | WENO-Z/MP | WENO-Z/MP | WENO-Z/MP |  --- Many choices are possible. :)
 
 In regions of shock waves one can also do Wave appropriate centralization. Is not included in the current python code.
 
