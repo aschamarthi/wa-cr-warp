@@ -105,4 +105,4 @@ It was fun. Faster than nvFORTRAN for reasons I don't know. For example, the Rie
 
 ## Author
 
-**Amareshwara Sainadh Chamarthi**
+**Amareshwara Sainadh Chamarthi** sainath@caltech.edu
