@@ -1,6 +1,20 @@
 """
-2D Compressible Euler Solver — Riemann Problem
-Nvidia Warp — same WENO-Z/HLLC/SSP-RK3 solver 
+2D Compressible Euler Solver — Explosion test case
+Warp GPU solver  |  Wave appropriate reconstruction
+
+## References
+
+1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
+2. Hoffmann, Chamarthi, Frankel — *Centralized gradient-based reconstruction for wall modeledlarge eddy simulations of hypersonic boundary layer transition*, **J. Comput. Phys.** (2024)
+3. Chamarthi — *Wave-appropriate multidimensional upwinding approach for compressible multiphase flows*, **J. Comput. Phys.** 538, 114157 (2025)
+4. Chamarthi — *Physics appropriate interface capturing reconstruction approach for viscous compressible multicomponent flows*, **Comput. Fluids** 303, 106858 (2025)
+5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
+
+
+Algorithm is from ref. 5. WA-3
+## Author
+
+**Amareshwara Sainadh Chamarthi** sainath@caltech.edu
 
 Problem
 -------
