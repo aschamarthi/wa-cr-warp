@@ -2,6 +2,20 @@
 3D Compressible Euler — Taylor-Green Vortex
 Warp GPU solver  |  WENO-Z / HLLC / SSP-RK3
 
+## References
+
+1. Chamarthi, Hoffmann, Frankel — *A wave appropriate discontinuity sensor approach for compressible flows*, **Phys. Fluids** 35, 066107 (2023)
+2. Hoffmann, Chamarthi, Frankel — *Centralized gradient-based reconstruction for wall modeledlarge eddy simulations of hypersonic boundary layer transition*, **J. Comput. Phys.** (2024)
+3. Chamarthi — *Wave-appropriate multidimensional upwinding approach for compressible multiphase flows*, **J. Comput. Phys.** 538, 114157 (2025)
+4. Chamarthi — *Physics appropriate interface capturing reconstruction approach for viscous compressible multicomponent flows*, **Comput. Fluids** 303, 106858 (2025)
+5. Chamarthi — *Wave-appropriate reconstruction of compressible flows: physics-constrained acoustic dissipation and rank-1 entropy wave correction*, preprint (2026)
+
+
+Algorith is from ref. 5.
+## Author
+
+**Amareshwara Sainadh Chamarthi** sainath@caltech.edu
+
 GPU optimisations vs v1:
   - SoA memory layout: cons[var, ix, iy, iz]  (coalesced reads)
   - Atomic-min dt reduction: only 8 bytes CPU<->GPU per step
