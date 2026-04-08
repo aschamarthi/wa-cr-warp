@@ -1166,7 +1166,8 @@ def compute_ke(rho_np,u_np,v_np,w_np):
     v=v_np[G:G+NX,G:G+NY,G:G+NZ]
     w=w_np[G:G+NX,G:G+NY,G:G+NZ]
     return float(np.sum(r*0.5*(u*u+v*v+w*w)))
-
+## I don't like using np.gradient but its choice had to make here. Ideally it should be computed by high-order derivatives or FFT, even better. It gets expensive and more ghost 
+## points and logics. I discarded enstrophy for now but will come back later.
 def compute_enstrophy(u_np,v_np,w_np,dx_py,dy_py,dz_py):
     u=u_np[G:G+NX,G:G+NY,G:G+NZ]
     v=v_np[G:G+NX,G:G+NY,G:G+NZ]
