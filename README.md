@@ -2,7 +2,7 @@
 
 A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](https://github.com/NVIDIA/warp), based on the wave-appropriate reconstruction framework of Chamarthi et al. (2023–2026).
 
-![TGV Q-criterion isosurface at t=10, coloured by vorticity magnitude](tgv_t10.00_Q4.0)
+![TGV Q-criterion isosurface at t=10, coloured by vorticity magnitude](tgv_t10.00_Q4.0.png)
 *Q-criterion isosurface (Q=4.0) coloured by vorticity magnitude |ω| for the inviscid Taylor-Green Vortex at t=10, N=512³.*
 
 ---
