@@ -78,7 +78,7 @@ Change to Tecplot or VTK files if necessary.
 | 512³ | ~49 GB | ~1.2 s | ~28,000 | ~9 hr |
 
 
-Could run 200M for inviscid case and 150M for viscous case in 3D on one GPU with 80 GB VRAM.
+Could run 200M for inviscid case and 150M for viscous case in 3D on one GPU with 80 GB VRAM. Started as fun project but I realized it has a lot of potential and am going to make it full functional code.
 
 
 ## 2D Riemann Problem (Configuration 3)
