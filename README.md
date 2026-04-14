@@ -10,7 +10,7 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 ## Key Features
 
 - **Wave-appropriate reconstruction** — each characteristic wave family (acoustic, entropy, vortical) is treated with its physically appropriate scheme
-- **SoA memory layout** `cons[var, ix, iy, iz]` for coalesced GPU memory access. Needed some modifications.
+- **SoA memory layout** `cons[var, ix, iy, iz]` for coalesced GPU memory access. Needed several modifications from the FORTRAN code (column and row major).
 - **SSP-RK3** time integration
 - **Ducros sensor** for shock detection and for the contact discontinuity rank-1 correction is used. 
 
