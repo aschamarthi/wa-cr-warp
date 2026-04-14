@@ -21,7 +21,7 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 | Smooth | Upwind (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
 | Shock | WENO-Z/MP | WENO-Z/MP | WENO-Z/MP |  
 
-Or corresponding variables, depending on the direction, will have appropriate values of \eta and kai (kai, a random name I used during development).
+Or corresponding conservative variables, depending on the direction, will have appropriate values of \eta and kai (kai, a random name I used during development).
 
 In regions of shock waves, one can also perform wave-appropriate centralization. However, this is not included in the current Python code. There are many possible choices. :)
 
