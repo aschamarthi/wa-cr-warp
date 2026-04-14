@@ -21,9 +21,9 @@ A high-performance 3D compressible Euler solver implemented in [NVIDIA Warp](htt
 | Smooth | Upwind (`eta=0.6`) | MP5 | Central-6 (`kai=0.5`) |
 | Shock | WENO-Z/MP | WENO-Z/MP | WENO-Z/MP |  
 
-or corresponding variables depending on the direction will have appropriate values of \eta and kai (kai, some random name I used during the development).
+Or corresponding variables, depending on the direction, will have appropriate values of \eta and kai (kai, a random name I used during development).
 
-In regions of shock waves one can also do Wave appropriate centralization. Is not included in the current python code. --- Many choices are possible. :)
+In regions of shock waves, one can also perform wave-appropriate centralization. However, this is not included in the current Python code. There are many possible choices. :)
 
 The wave-appropriate framework decomposes the flow into its five characteristic families and applies the minimum necessary dissipation to each:
 
