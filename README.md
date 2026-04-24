@@ -53,6 +53,8 @@ python 3D_TGV_WA.py --n 512
 
 # CPU mode
 python 3D_TGV_WA.py --n 64 --cpu
+
+## ## See details in Viscous-TGV folder on how to run the case. It has a makefile.
 ```
 
 ## Output
