@@ -101,7 +101,7 @@ Two solvers are included:
 
 I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary.
 
-It was fun. It was faster than nvFORTRAN. For instance, the Riemann problem took about 24 seconds with FORTRAN code. I like the CUDA code I get. :). It matches really well for the viscous TGV, which is added on 04/23/26, check the folder. Follwoing figure is comapriosn with the F90 code, $96^3$.
+It was fun. It was faster than nvFORTRAN. For instance, the Riemann problem took about 24 seconds with FORTRAN code. I like the CUDA code I get. :). It matches really well for the viscous TGV, which is added on 04/23/26, check the folder. Following figure is a comparison with the F90 code, $96^3$.
 
 <p align="center">
   <img src="match.png" width="400"/>
