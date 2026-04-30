@@ -99,9 +99,7 @@ Two solvers are included:
 - `MUSCL_WA.py` — WA-3 approach
 - `WENO_PNG_Cheap.py` — WA-WENO-CR approach (11s on A100 at 512², an hour and few minutes for 2048²)
 
-I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary.
-
-It was fun. It was faster than nvFORTRAN. For instance, the Riemann problem took about 24 seconds with FORTRAN code. I like the CUDA code I get. :). It matches really well for the viscous TGV, which is added on 04/23/26, check the folder.
+I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary. It matches really well for the viscous TGV, which is added on 04/23/26, check the folder.
 
 ## References
 
