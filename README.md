@@ -89,7 +89,7 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 ![2D Riemann Problem — WA-3 scheme]
 <p align="center">
-  <img src="M6_cyl_wake.png" width="400"/>
+  <img src="Riemann_W3.png" width="400"/>
 </p>
 
 
@@ -101,12 +101,12 @@ Two solvers are included:
 
 I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary. It matches really well for the viscous TGV, which is added on 04/23/26, check the folder.
 
-Curvilinear is straightforward.
+Curvilinear is straightforward. Yes, it’s a wave/physics-appropriate approach; Ducros + Rank-1 correction. It’s simple, robust, and fast!
 
 
 ![Shock cylinder Mach 6]
 <p align="center">
-  <img src="Riemann_W3.png" width="400"/>
+  <img src="M6_cyl_wake.png" width="400"/>
 </p>
 
 ## References
