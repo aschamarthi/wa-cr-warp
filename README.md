@@ -89,7 +89,7 @@ The other two codes in the repository simulate the 2D Riemann problem by using W
 
 ![2D Riemann Problem — WA-3 scheme]
 <p align="center">
-  <img src="Riemann_W3.png" width="400"/>
+  <img src="M6_cyl_wake.png" width="400"/>
 </p>
 
 
@@ -100,6 +100,14 @@ Two solvers are included:
 - `WENO_PNG_Cheap.py` — WA-WENO-CR approach (11s on A100 at 512², an hour and few minutes for 2048²)
 
 I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary. It matches really well for the viscous TGV, which is added on 04/23/26, check the folder.
+
+Curvilinear is straightforward.
+
+
+![Shock cylinder Mach 6]
+<p align="center">
+  <img src="Riemann_W3.png" width="400"/>
+</p>
 
 ## References
 
