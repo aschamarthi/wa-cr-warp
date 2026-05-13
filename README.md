@@ -103,14 +103,14 @@ I’ll add the multicomponent and multiphase codes later, and I might even add g
 
 https://github.com/aschamarthi/Wave-Multiphase -- Multiphase code is here. Curvilinear is straightforward. Yes, it’s a wave/physics-appropriate approach; Ducros + Rank-1 correction. It’s simple, robust, and fast!
 
-I explained why curvilienar and rank-1 workes here https://arxiv.org/abs/2605.08105 
+I explained why the rank-1 approach works on curvilinear coordinates here: https://arxiv.org/abs/2605.08105  
 
 ![Shock cylinder Mach 6]
 <p align="center">
   <img src="M6_cyl_wake.png" width="400"/>
 </p>
 
-It's a wrap. Peace out.
+It's a wrap. Peace out. Archived.
 
 ## References
 
