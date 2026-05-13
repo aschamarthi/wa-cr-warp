@@ -101,13 +101,16 @@ Two solvers are included:
 
 I’ll add the multicomponent and multiphase codes later, and I might even add geometries like curvilinear or immersed boundary. It matches really well for the viscous TGV, which is added on 04/23/26, check the folder.
 
-Curvilinear is straightforward. Yes, it’s a wave/physics-appropriate approach; Ducros + Rank-1 correction. It’s simple, robust, and fast!
+https://github.com/aschamarthi/Wave-Multiphase -- Multiphase code is here. Curvilinear is straightforward. Yes, it’s a wave/physics-appropriate approach; Ducros + Rank-1 correction. It’s simple, robust, and fast!
 
+I explained why curvilienar and rank-1 workes here https://arxiv.org/abs/2605.08105 
 
 ![Shock cylinder Mach 6]
 <p align="center">
   <img src="M6_cyl_wake.png" width="400"/>
 </p>
+
+It's a wrap. Peace out.
 
 ## References
 
